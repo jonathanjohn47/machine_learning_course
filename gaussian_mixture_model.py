@@ -27,16 +27,20 @@ d = pd.DataFrame(X)
 
 # Gaussian Mixture Model
 
-gmm = GaussianMixture(n_components=3).fit(d)
+gmm = GaussianMixture(n_components=5).fit(d)
 labels = gmm.predict(d)
 
 print(labels)
 d0 = d[labels == 0]
 d1 = d[labels == 1]
 d2 = d[labels == 2]
+d3 = d[labels == 3]
+d4 = d[labels == 4]
 
 plt.scatter(d0[0], d0[1], c='red')
 plt.scatter(d1[0], d1[1], c='green')
 plt.scatter(d2[0], d2[1], c='blue')
+plt.scatter(d3[0], d3[1], c='yellow')
+plt.scatter(d4[0], d4[1], c='black')
 
 plt.show()
