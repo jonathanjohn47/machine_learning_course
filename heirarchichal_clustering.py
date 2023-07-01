@@ -7,7 +7,7 @@ from sklearn.cluster import AgglomerativeClustering
 
 import scipy.cluster.hierarchy as shc
 
-data = DataFrame(np.random.randint(0, 20000, size=(1000, 2)))
+data = DataFrame(np.random.randint(0, 20000, size=(500, 2)))
 
 #data_scaled = DataFrame(normalize(data))
 
